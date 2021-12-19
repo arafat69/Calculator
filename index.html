@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+        <div id="calculator_box" class="text-center">
+            <form name="calculator">
+                <div class="result-box">
+                    <input type="text" name="screen" class="screen" maxlength="12" readonly>
+                </div>
+                <div>
+                    <input type="button" class="button btn-clean" value="C" onclick="calculationClean()">
+                    <input type="button" class="button btn-mf" value="&#8730;" onclick="mathrouth()">
+                    <input type="button" class="button btn-mf" value="&larr;" onclick="backspace()">
+                    <input type="button" class="button btn-ms" value="/" onclick="insertValue('/')">
+                </div>
+                <div>
+                    <input type="button" class="button" value="7" onclick="insertValue(7)">
+                    <input type="button" class="button" value="8" onclick="insertValue(8)">
+                    <input type="button" class="button" value="9" onclick="insertValue(9)">
+                    <input type="button" class="button btn-ms" value="x" onclick="insertValue('*')">
+                </div>
+                <div>
+                    <input type="button" class="button" value="4" onclick="insertValue(4)">
+                    <input type="button" class="button" value="5" onclick="insertValue(5)">
+                    <input type="button" class="button" value="6" onclick="insertValue(6)">
+                    <input type="button" class="button btn-ms" value="-" onclick="insertValue('-')">
+                </div>
+                <div>
+                    <input type="button" class="button" value="1" onclick="insertValue(1)">
+                    <input type="button" class="button" value="2" onclick="insertValue(2)">
+                    <input type="button" class="button" value="3" onclick="insertValue(3)">
+                    <input type="button" class="button btn-ms" value="+" onclick="insertValue('+')">
+                </div>
+                <div>
+                    <input type="button" class="button btn-0" value="0" onclick="insertValue(0)">
+                    <input type="button" class="button " value="." onclick="insertValue('.')">
+                    <input type="button" class="button btn-mf" value="%" onclick="insertValue('%')">
+                    <input type="button" class="button btn-mp" value="=" onclick="mathcalculation()">
+                </div>
+            </form>
+        </div>
+        <script src="js/app.js"></script>
+</body>
+</html>
